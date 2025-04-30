@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
+  <head> </head>
   <body>
     <section>
-      <object data="example1.svg" type="image/svg+xml"></object>
-      <p>The Baseline Demonstration SVG from Mozilla</p>
+      <h1>Basic Styling</h1>
+      <figure>
+        <object data="example1.svg" type="image/svg+xml"></object>
+        <figcaption>The Baseline Demonstration SVG from Mozilla</figcaption>
+      </figure>
+      <figure>
+        <object data="example2.svg" type="image/svg+xml"></object>
+        <figcaption>Demonstrates an Embedded Style in the SVG.</figcaption>
+      </figure>
+      <figure>
+        <object data="example3.svg" type="image/svg+xml"></object>
+        <figcaption>
+          Demonstrates styling from an external stylesheet loaded by the SVG.
+        </figcaption>
+      </figure>
     </section>
-
     <section>
-      <object data="example2.svg" type="image/svg+xml"></object>
-      <p>Demonstrates an Embedded Style in the SVG.</p>
-    </section>
-
-    <section>
-      <object data="example3.svg" type="image/svg+xml"></object>
-      <p>Demonstrates styling from an external stylesheet loaded by the SVG.</p>
+      <h1>JavaScript-Powered Styling</h1>
+      <figure>
+        <object id="example4" data="example4.svg" type="image/svg+xml"></object>
+        <figcaption>
+          Loads and runs some javascript from within the SVG.
+        </figcaption>
+      </figure>
     </section>
   </body>
 </html>
